@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operačné systémy</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+
+
+<body>
+
+  <div class="navbar" id="navbar">
+    <a href="#introduction_id">Úvod</a>
+    <a href="#processes_id">Správa procesov</a>
+    <a href="#memory_id">Správa pamäte</a>
+    <a href="#devices_id">Správa zariadení</a>
+    <a href="#files_id">Správa súborov</a>
+    <a href="#os_parts_id">Súčasti operačného systému</a>
+    <a href="#most_used_os">Najpouživanejšie OS</a>
+  </div>
+  <div class="home">
+    <div class="introduction" id="introduction_id">
+      <h1>OPERAČNÉ SYSTÉMY</h1>
+      <p>Operačný systém (OS) je súhrnné označenie pre programy, ktoré zabezpečujú komunikáciu medzi užívateľom a počítačom, riadia a dozerajú na spúšťanie a vykonávanie používateľských programov, prideľovanie prostriedkov jednotlivým programom a riadi tiež spôsob ukladania údajov.</p>
+
+      <p>Je to nenahraditeľné rozhranie pri komunikácii hardvéru a softwéru. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. </p>
+    </div>
+    <div class="image_main_div">
+      <img src="images/Heading.png" alt="" class="image_main">
+    </div>
+  </div>
+  <div class="white_part ">
+    <p class="p_without_margin">Bez operačného systému nie je možné počítač používať, pretože všetky príkazy užívateľa musí najprv ten spracovať. Umožňuje nám vykonávať obsluhu prostriedkov počítača pomocou svojich príkazov, ako sú napr. zmena diskovej mechaniky, prezretie obsahu, spustenie programu, vytlačenie súboru, kopírovanie a vymazávanie programov z jednotlivých mechaník. OS využívajú aj všetky programy. Je prítomný na pevnom disku počítača a načíta sa do pamäte pri štarte počítača. Tomuto procesu sa hovorí bootovanie.
+    </p>
+    <div class=" flex">
+      <img src="images/cube1.gif" alt="" class="cube_gif">
+      <div>
+        <p>Bootovanie je proces, pri ktorom sa OS načíta sa do operačnej pamäte (inicializuje) pri štarte (reštarte) počítača (najčastejšie z HDD). Pamäťové nosiče, z ktorých sa dá naštartovať OS sa nazývajú bootovacie nosiče (boot CD, boot DVD, boot USB disk,...).</p>
+
+        <p>Vo väčšine prípadov, operačný systém nie je prvým kódom, ktorý sa spúšťa v počítači pri bootovaní. Inicializačný kód, vykonávaný v počítači, je zvyčajne nahratý z firmvéru, ktorý je uložený vo Flash ROM, niekedy označovaný aj ako BIOS alebo boot ROM. Firmvér nahrá a spustí jadro operačného systému (zvyčajne z disku, niekedy aj cez sieť) a zobrazí prvý grafický alebo textový výstup, ktorý užívateľ uvidí.</p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="dark_part ">
+    <p class="p_without_margin">Operačný systém môžeme charakterizovať ako správcu všetkých prostriedkov a procesov. Počítače sa skladajú z množstva komponentov - pamätí, diskov, tlačiarni a pod., ktoré chcú používať spustené programy. Proces je teda označenie pre bežiaci program, prostriedok je označenie pre komponent počítača. Z pohľadu spravovania prostriedkov a procesov delíme OS na štyri časti:
+    </p>
+    <div class="flex os_parts_buttons">
+      <a href="#processes_id" class="a_parts"><button class="os_parts_button">Správa procesov <br><br>
+        <img src="images/process.png" alt=""></button></a>
+      <a href="#memory_id"  class="a_parts"><button class="os_parts_button">Správa pamäte<br><br>
+        <img src="images/memory.png" alt=""></button></a>
+      <a href="#devices_id"  class="a_parts"><button class="os_parts_button">Správa zariadení<br><br>
+        <img src="images/device.png" alt=""></button></a>
+      <a href="#files_id"  class="a_parts"><button class="os_parts_button">Správa súborov <br><br>
+        <img src="images/file.png" alt=""></button></a>
+      
+      </div>
+ 
+    
+    
+  </div>
+ 
+  <div class="white_part flex" id="processes_id">
+    <div class="text_part">
+      <h2>Správa procesov</h2>
+      <p >Podľa jedného programu môže bežať viac procesov, môžu pracovať s rôznymi dátami a byť v rôznom štádiu rozpracovania. Do správy procesov zahŕňame časti operačného systému, ktoré sa starajú o vznik procesov (spustenie programov), ich život, zánik ako aj komunikáciu medzi procesmi.</p>
+      <p >Multitasking (multiprogramming) je spustenie viacerých procesov (programov) súčasne v počítači. Ak v rámci jedného programu je naprogramovaných viac činnosti súčasne, hovoríme , že program je vykonávaný vláknami. (napr. pri programe MS Word: editovanie textu, formátovanie a kontrola pravopisu beží súčasne).</p>
+    </div>
+    <img src="images/processes.png" alt="" class="image_main_div">
+  </div>
+
+
+  <div class="dark_part" id="memory_id">
+    <h2>Správa pamäte </h2>
+    <p class="p_without_margin">Úlohou správy pamäte je prideľovať procesom pamäť. To znamená umožniť procesom žiadať pamäť, uvoľňovať ju a niekedy aj zdieľať medzi niekoľkými procesmi. Zároveň správa pamäte aj chráni pamäť, teda zabezpečuje, aby jeden proces nemohol zasahovať do pamäte iného procesu. 
+      Operačné systémy používajú pri správe pamäte virtuálnu pamäť, to znamená, že každý proces ma pridelený vlastný adresný priestor pamäte, kde si ukladá svoje údaje. </p>
+      <img src="images/memory_part.png" alt="" class="img_memory">
+  </div>
+
+
+  <div class="white_part flex" id="devices_id">
+    <img src="images/devices.png" alt="" class=" img_devices">
+    <div class="text_part_right">
+      <h2>Správa zariadení</h2>
+      <p >Správa zariadení sa zaoberá efektívnym poskytovaním funkcií rôznorodým vstupným a výstupným zariadeniam, pričom sa stará o to, aby procesy nemuseli riešiť technické detaily jednotlivých zariadení</p>
+      <p>Jej úlohou je tiež riadiť prístup procesov k zariadeniam, aby nedochádzalo k súčasnému používaniu zariadení viacerými procesmi a zabezpečiť ochranu zariadení pred neoprávneným prístupom. </p>
+    </div>
+  </div>
+
+
+  <div class="dark_part flex " id="files_id">
+   
+    <div class="text_part">
+      <h2>Správa súborov</h2>
+      <p >Zabezpečuje širokú škálu operácií ako vytváranie, editovanie, prezeranie, kopírovanie, premenovávanie, mazanie, zálohovanie, komprimovanie a ďalšie úpravy súborov. Taktiež chráni dáta systému a používateľov pred poškodením.</p>
+      <p> Súbor je základnou jednotkou pamäte, ktorá obsahuje informácie a údaje logicky súvisiace medzi sebou. Súborový systém definuje spôsob, ako súbory sú uložené na diskoch, pričom operačný systém môže pracovať s rôznymi súborovými systémami súčasne na rôznych diskoch.</p>
+    </div>
+    <img src="images/FILES1.png" alt="" class=" image_main_div" style="width: 40%; margin-left: 5%;">
+  </div>
+  <div class="dark_part flex" style="margin-top: -2%;">
+    <img src="images/FILES2.png" alt="" class=" img_devices" style="max-width: 50%; margin: 0; ">
+    <div class="text_part_right " style="margin-left: 3%;">
+
+      <p >Napríklad, na systémovom disku HDD môže byť iný súborový systém ako na výmenných SD kartách, CD alebo DVD diskoch. Označenie súboru pozostáva z mena a prípony oddelených bodkou, pričom prípona určuje typ súboru (textový, obrázkový, zvukový, video, programový atď.). </p>
+      <p>Informácie o dátume a čase vzniku, poslednej zmeny a veľkosti súboru sú súčasťou jeho atribútov, ktoré môžu obsahovať aj charakteristické vlastnosti ako archív, systém, skrytý, alebo určiť len na čítanie. </p>
+    </div>
+  </div>
+  <div class="white_part " id="os_parts_id">
+      <h2 style="margin-left: auto; margin-right: auto; width: max-content; margin-bottom: 2%;">Súčasti operačného systému  </h2>
+      <div class="flex">
+        <div class="components_os">
+          <h3>Jadro</h3>
+          <p>Inicializuje sa alebo nahráva do pamäte ostatné dôležité časti operačného systému.
+          </p>
+        </div>
+        <div class="components_os">
+          <h3>Monitor </h3>
+          <p>Zabezpečuje komunikáciu systému s užívateľom.  
+
+          </p>
+        </div>
+        <div class="components_os">
+          <h3>Ovládače </h3>
+          <p>Sú to obslužné programy vstupno/výstupných zariadení. 
+          </p>
+        </div>
+      </div>
+  </div>
+
+  <div class="dark_part " id="most_used_os">
+    <h2 style="margin-left: auto; margin-right: auto; width: max-content; margin-bottom: 2%;">Najpouživanejšie OS  </h2>
+
+    <div class="flex os_parts_buttons">
+
+
+      <a href="#windows_id" class="os_most_used"><button class="os_parts_button os_most_used_btn"> Windows <br><br>
+        <img src="images/windows.png" alt=""></button></a>
+      
+      <a href="#macos_id" class="os_most_used"><button class="os_parts_button os_most_used_btn"> Mac OS <br><br>
+        <img src="images/macos.png" alt=""></button></a>
+
+      <a href="#linux_id" class="os_most_used"><button class="os_parts_button os_most_used_btn"> Linux <br><br>
+        <img src="images/linux.png" alt=""></button></a>
+
+      
+    </div>
+  </div>
+  <div class="white_part flex" id="windows_id">
+    <img src="images/windows2.png" alt="" class=" img_devices">
+    <div class="text_part_right" style="margin-top: 5%;">
+      <h2>Microsoft Windows</h2>
+      <p >V súčasnosti najrozšírenejší operačný systém na počítačoch. Nie je zadarmo, licenciu na používanie si treba kúpiť. Väčšinou býva už predinštalovaný pri kúpe počítača a licencia je zahrnutá v cene zariadenia.</p>
+      <p>Stretneme sa s ním prakticky všade, nakoľko ho používajú úrady, štátne inštitúcie, firmy, domácnosti a jeho znalosti (aspoň základy) sú bežnou podmienkou zamestnávateľov. </p>
+    </div>
+  </div>
+
+  <div class="dark_part flex "id="macos_id">
+   
+    <div class="text_part "style="margin-top: 5%;">
+      <h2>Mac OS</h2>
+      <p >Je to operačný systém počítačov spoločnosti Apple. Je do detailov dotiahnutý a postavený na Unix-ovom jadre, z ktorého myšlienky vychádza aj Linux.</p>
+      <p>  Výhodou tohto systému je to, že integruje v sebe hardvér a softvér, ktoré sú medzi sebou výkonovo vyladené. 
+      </p>
+    </div>
+    <img src="images/macos2.png" alt="" class=" image_main_div" style="width: 40%; margin-left: 5%;">
+  </div>
+
+  <div class="white_part flex" id="linux_id">
+    <img src="images/linux-22620.png" alt="" class=" img_devices">
+    <div class="text_part_right" style="margin-top: 5%;">
+      <h2>Linux</h2>
+      <p >Linux je operačný systém, ktorý je voľne dostupný, open-source a založený na jadre Linux.</p>
+      <p>Súčasťou Linuxu je aj bohatá podpora pre príkazový riadok a množstvo príkazov a utilít na pokročilú správu a konfiguráciu systému.</p>
+    </div>
+  </div>
+
+  <div class="dark_part end">
+    <p class="copyright">Copyright 2024
+    </p>
+  </div>
+
+
+</body>
+
+</html>

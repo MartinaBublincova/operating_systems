@@ -1,0 +1,192 @@
+html {
+  background-color: #21252D;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  
+  
+}
+
+
+body {
+  background-color: #21252D;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+  overflow-x: hidden;
+
+}
+
+.navbar {
+  color: rgb(129, 131, 138);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+a {
+  margin:  1% 0 1% 0;
+  color: rgb(152, 153, 160);
+  text-decoration: none;
+
+}
+
+a:hover {
+  color:rgb(202, 204, 217) ;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+.home {
+  display: flex;
+  padding: 2% 10%;
+}
+
+
+.introduction {
+  width: 50%;
+  background-color: #21252D;
+  color: rgb(202, 204, 217);
+  padding-top: 5%;
+  
+
+  
+} 
+
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.image_main_div {
+  background-color: #21252D;
+  max-width: 50%;
+  
+
+}
+
+.image_main {
+  max-width: 90%;
+  margin-left: 10%;
+
+  
+}
+
+.white_part {
+
+  background-color: rgb(202, 204, 217);
+  padding: 5% 10%;
+}
+
+p {
+  margin: 8% 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.cube_gif {
+  max-width: 30%;
+  height: 30%;
+  margin: 5% 10%;
+}
+
+.p_without_margin {
+  margin: 0 0;
+}
+
+.dark_part {
+  color:  rgb(202, 204, 217);
+  padding: 5% 10%;
+}
+
+
+.os_parts_buttons {
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+
+.a_parts {
+  width: 20%;
+
+}
+
+.os_parts_button {
+  background-color: #CACCD9;
+  color: #21252D;
+  padding: 10%;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: larger;
+  width: 100%;
+
+}
+
+.os_parts_button:hover {
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #e4e7fc;
+
+}
+
+.text_part {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.text_part_right {
+  margin-left: 10%;
+}
+.img_memory {
+  width: 150%;
+  margin-top: 2%;
+  max-height: 15rem;
+  margin-left: -20%;
+
+}
+
+
+.img_devices {
+  max-width: 40%;
+  margin-left: 5%;
+}
+
+.components_os {
+  width: 28%;
+  margin: 2%;
+  text-align: center;
+  background-color: #21252D;
+  color: #CACCD9;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.os_most_used {
+  width: 20%;
+}
+
+.end {
+  padding: 2%;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+  font-weight: 200;
+  padding-top: 1%;
+  border-top: #46474b 1px solid;
+}
+
+.os_most_used_btn {
+  width: 100%;
+  padding: 20% 0;
+  height: 250px;
+}
